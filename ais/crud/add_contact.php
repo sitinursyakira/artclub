@@ -12,7 +12,7 @@ if (isset($_POST["submit"])) {
    
 
 
-   $sql = "INSERT INTO `contact`(`contact_id`, `contact_name`, `contact_studid`, `contact_phone`, `contact_email`,`contact_desc`) VALUES (NULL,'$contact_name','$contact_studid','$contact_phone', $contact_email','$contact_desc')";
+   $sql = "INSERT INTO `contact`(`contact_id`, `contact_name`, `contact_studid`, `contact_phone`, `contact_email`,`contact_desc`) VALUES (NULL,'$contact_name','$contact_studid','$contact_phone', '$contact_email','$contact_desc')";
 
    $result = mysqli_query($conn, $sql);
 
